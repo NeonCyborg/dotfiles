@@ -228,7 +228,7 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 5
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5
 
 # Touchpad controls
-bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
+bindsym XF86TouchpadToggle exec ~/.i3/toggletouchpad.sh
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play
@@ -245,11 +245,9 @@ exec xrdb ~/.Xresources
 
 #auto start
 exec emacs
-exec emacs
 exec firefox
 exec discord
 exec nautilus
-exec steam
 exec transmission-gtk
 exec setxkbmap -layout us -option ctrl:nocaps
 exec_always feh --bg-scale ~/Wallpaper.jpg
